@@ -13,7 +13,7 @@ function App() {
       <div style={styles.container}>
         <h1>Fullstack App</h1>
         <p>Esta es una aplicación que incluye validación de datos, una tabla de productos y un gestor de tareas.</p>
-        <p>Autor: Roberto Campos</p>
+        <p>Autor: <a href="https://github.com/EnriqueVega1995" target="_blank">Roberto Campos</a></p>
 
         <section style={styles.section}>
           <ValidationForm />
