@@ -1,6 +1,6 @@
-import ValidationForm from './ValidationForm';
-import ProductTable from './ProductTable';
-import TaskManager from './TaskManager';
+import ValidationForm from './components/ValidationForm';
+import ProductTable from './components/ProductTable';
+import TaskManager from './components/TaskManager';
 
 function App() {
   const products = [
@@ -12,7 +12,7 @@ function App() {
     <div style={styles.wrapper}>
       <div style={styles.container}>
         <h1>Fullstack App</h1>
-        <p>Esta es una aplicación de ejemplo que incluye validación de datos, una tabla de productos y un gestor de tareas.</p>
+        <p>Esta es una aplicación que incluye validación de datos, una tabla de productos y un gestor de tareas.</p>
         <p>Autor: Roberto Campos</p>
 
         <section style={styles.section}>

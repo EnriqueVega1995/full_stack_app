@@ -22,7 +22,7 @@ app.post('/validate', (req, res) => {
         return res.status(400).json({ error: 'Se requiere un correo electrónico válido' });
     }
 
-    if (typeof age !== 'number' || age <= 18) {
+    if (typeof age !== 'number' || age < 18) {
         return res.status(400).json({ error: 'La edad debe ser un número mayor o igual a 18' });
     }
 
