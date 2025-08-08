@@ -46,10 +46,6 @@ npm run dev
 ```
 La app estará disponible en http://localhost:5173
 
-> **Nota:** Asegúrate de que el archivo `.env` o las rutas en React apunten a `http://localhost:3000` si estás en entorno local.
-
----
-
 ## Funcionalidades
 
 ### 1. Validación de Datos
@@ -102,9 +98,10 @@ full_stack_app/
 │   └── index.js
 ├── frontend/       # Aplicación React + Vite
 │   └── src/
-│       ├── ValidationForm.jsx
-│       ├── ProductTable.jsx
-│       └── TaskManager.jsx
+│       └── components
+│           ├── ValidationForm.jsx
+│           ├── ProductTable.jsx
+│           └── TaskManager.jsx
 ├── .gitignore
 └── README.md
 ```
