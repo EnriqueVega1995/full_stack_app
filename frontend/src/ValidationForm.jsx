@@ -14,7 +14,7 @@ const ValidationForm = () => {
   const handleValidate = async () => {
     try {
       const parsed = JSON.parse(jsonInput);
-      const res = await fetch('http://localhost:3000/validate', {
+      const res = await fetch('/api/validate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(parsed),

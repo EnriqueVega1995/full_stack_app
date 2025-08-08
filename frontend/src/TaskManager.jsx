@@ -13,8 +13,8 @@ const TaskManager = () => {
   const fetchTasks = async () => {
     const url =
       filter === 'todas'
-        ? 'http://localhost:3000/tasks'
-        : `http://localhost:3000/tasks?status=${filter}`;
+        ? '/api/tasks'
+        : `/api/tasks?status=${filter}`;
 
     try {
       const res = await fetch(url);
@@ -27,7 +27,7 @@ const TaskManager = () => {
 
   const createTask = async (e) => {
     e.preventDefault();
-    const res = await fetch('http://localhost:3000/tasks', {
+    const res = await fetch('/api/tasks', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form),
